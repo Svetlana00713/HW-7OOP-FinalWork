@@ -6,13 +6,20 @@ import java.util.Collections;
 import java.util.Iterator;
 
 public class Tree<E extends Person> implements Serializable, Iterable<E> {
+    private List<E> persons;
+    private Writable writable;
+    private Person result;
+    public Tree(Writable writable) {
+        this.writable = writable;
+    }
+    public void setWritable(Writable writable) {
+        this.writable = writable;
+    }
     @Override
     public Iterator<E> iterator() {
         // TODO Auto-generated method stub
         return new PersonIterator<E>(persons);
     }
-
-    private List<E> persons;
     public Tree() {
         this(new ArrayList<>());
     }

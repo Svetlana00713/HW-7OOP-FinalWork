@@ -5,8 +5,8 @@ public class PersonIterator <E> implements Iterator<E>{
     private List<E> persons;
     private int index;
 
-    public PersonIterator(List<E> h) {
-        this.persons = h;
+    public PersonIterator(List<E> p) {
+        this.persons = p;
     }
 
     @Override
@@ -24,6 +24,5 @@ public class PersonIterator <E> implements Iterator<E>{
     @Override
     public void remove() {
         // TODO Auto-generated method stub
-
     }
 }

@@ -15,6 +15,10 @@ public class Program {
         tree.add(h3);
         tree.add(h4);
 
+        View view = new Console();
+        Presenter presenter = new Presenter(view, tree);
+        view.start();
+
         System.out.println(tree.getInfo());
         System.out.println();
         System.out.print("Maria`s kids: " + tree.getKids("Maria"));
@@ -22,7 +26,6 @@ public class Program {
 
         System.out.print("Elena`s kids: " + tree.getKids("Elena"));
         System.out.println();
-
 
         File file = new File();
         file.save(tree);
@@ -51,38 +54,38 @@ public class Program {
             System.out.println(person);
         }
 
-        Tree<Dog> tree_dog = new Tree();
-        Service service2 = new Service(tree_dog);
+        // Tree<Dog> tree_dog = new Tree();
+        // Service service2 = new Service(tree_dog);
 
-        Dog d1 = new Dog("Bim", Gender.Male, 2020);
-        Dog d2 = new Dog("Alvora", Gender.Female, 2019);
-        Dog d3 = new Dog("Didi", Gender.Female, 2023, d1, d2);
-        Dog d4 = new Dog("Alex", Gender.Male, 2022, d1, d2);
+        // Dog d1 = new Dog("Bim", Gender.Male, 2020);
+        // Dog d2 = new Dog("Alvora", Gender.Female, 2019);
+        // Dog d3 = new Dog("Didi", Gender.Female, 2023, d1, d2);
+        // Dog d4 = new Dog("Alex", Gender.Male, 2022, d1, d2);
 
-        tree_dog.add(d1);
-        tree_dog.add(d2);
-        tree_dog.add(d3);
-        tree_dog.add(d4);
+        // tree_dog.add(d1);
+        // tree_dog.add(d2);
+        // tree_dog.add(d3);
+        // tree_dog.add(d4);
 
-        System.out.println();
-        System.out.println("Dogs in the tree: ");
-        for (Dog dog : tree_dog) {
-            System.out.println(dog);
-        }
+        // System.out.println();
+        // System.out.println("Dogs in the tree: ");
+        // for (Dog dog : tree_dog) {
+        //     System.out.println(dog);
+        // }
 
-        service2.sortByName();
+        // service2.sortByName();
 
-        System.out.println();
-        System.out.println("Sorted dogs by name: ");
-        for (Dog dog : tree_dog) {
-            System.out.println(dog);
-        }
-        service2.sortByYear();
-        System.out.println();
-        System.out.println("Sorted dogs by year: ");
-        for (Dog dog : tree_dog) {
-            System.out.println(dog);
-        }
+        // System.out.println();
+        // System.out.println("Sorted dogs by name: ");
+        // for (Dog dog : tree_dog) {
+        //     System.out.println(dog);
+        // }
+        // service2.sortByYear();
+        // System.out.println();
+        // System.out.println("Sorted dogs by year: ");
+        // for (Dog dog : tree_dog) {
+        //     System.out.println(dog);
+        //  }
     }
 }
 
