@@ -1,9 +1,12 @@
-import java.util.List;
+package view;
+
+import presenter.Presenter;
 
 public interface View {
     void setPresenter(Presenter Presenter);
 
     void start();
 
-    void print(List text);
+    void print(String text);
 }
+

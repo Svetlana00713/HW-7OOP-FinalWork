@@ -1,7 +1,9 @@
+package family_tree.model.tree;
+
 import java.io.Serializable;
 import java.io.*;
 
-public class File implements Serializable{
+public class File implements Serializable {
     public Tree obj;
     public void save(Tree obj) throws IOException, ClassNotFoundException {
         this.obj = obj;
@@ -18,4 +20,3 @@ public class File implements Serializable{
         return this.obj;
     }
 }
-
