@@ -1,6 +1,4 @@
-package view.commands;
-
-import view.Console;
+package family_tree.view.commands;
 
 public class GetPersonList {
     private Console console;
@@ -10,7 +8,7 @@ public class GetPersonList {
     }
 
     public String getDescription() {
-        return "Get by name";
+        return "Get persons";
     }
 
     public void execute() {

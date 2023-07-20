@@ -20,14 +20,14 @@ public class Service {
         activeTree = new Tree<>();
     }
 
-    public boolean save(){
+    public boolean saveData(){
         if (writable == null){
             return false;
         }
         return writable.save(activeTree);
     }
 
-    public boolean load(){
+    public boolean loadData(){
         if (writable == null){
             return false;
         }
@@ -56,6 +56,10 @@ public class Service {
 
     public void sortedByAge(){
         activeTree.sortedByAge();
+    }
+
+    public void sortByBirthDate(){
+        activeTree.sortedByBirthDate();
     }
 
     public String getPersonList() {

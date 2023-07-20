@@ -1,6 +1,6 @@
-package view;
+package family_tree.view;
 
-import presenter.Presenter;
+import family_tree.presenter.Presenter;
 
 public interface View {
     void setPresenter(Presenter Presenter);

@@ -1,6 +1,6 @@
-package view;
+package family_tree.view;
 
-import presenter.Presenter;
+import family_tree.presenter.Presenter;
 
 import java.util.Scanner;
 
@@ -39,3 +39,4 @@ public class Console implements View {
         }
     }
 }
+

@@ -5,8 +5,6 @@ import family_tree.model.person.Gender;
 import family_tree.model.person.Person;
 import family_tree.model.save.FileHandlerForTree;
 import family_tree.model.tree.Tree;
-import view.Console;
-import view.View;
 
 import java.time.LocalDate;
 
@@ -34,7 +32,7 @@ public class Program {
 
         Service service = new Service(tree);
         service.setWritable(new FileHandlerForTree());
-        service.save();
+        service.saveData();
 
         View view = new Console();
         view.start();

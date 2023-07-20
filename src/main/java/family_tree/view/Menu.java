@@ -1,6 +1,6 @@
-package view;
+package family_tree.view;
 
-import view.commands.GetPersonList;
+import family_tree.view.commands.GetPersonList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +28,3 @@ public class Menu {
         list.get(Integer.parseInt(choice) - 1).execute();
     }
 }
-
-
-
-
